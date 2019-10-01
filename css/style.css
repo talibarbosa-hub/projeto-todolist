@@ -5,22 +5,20 @@
 
 body{
     background-image: linear-gradient(to right,#dec3fc,#9ec4fc);
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 
 section{
     background-color: white;
     margin: 0 auto;
-    min-height: 75vh;
-    width: 80vw;
-    position: relative;
+    min-height: 90vh;
+    min-width: 75vw;
 }
 
 #titulo{
     text-align: center;
     padding: 25px 0px;
-  
 }
 
 
@@ -31,14 +29,14 @@ section{
     border-top: #d5d5d5 solid 1px;
 }
 
-.btnAdd{
+#btnAdd{
     background-color:#ba7af8;
     color: white;
     width: 100%;
     height: 40px;
     text-align: center;
     padding-top: 10px;
-
+    border-style: none;
 }
 
 #divBtns{
@@ -47,11 +45,9 @@ section{
     margin-right: 3px;
     margin-left: 3px;
     width: 100%;
-    position: absolute;
+    position: relative;;
     bottom: 10px;
-    margin-top: 70px;
-
-
+    margin-top: 50px;
 }
 
 .btns {
@@ -61,5 +57,33 @@ section{
     border-radius: 5px;
     border-style:none;
     padding: 10px 10px;
+}
 
+ul {
+    padding: 15px;
+}
+
+ul > li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.checked{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.xStyle { 
+    background-color: white;
+    border-style: none;
+
+}
+
+/* === TAREFAS BOX=== */
+
+.tarefa {
+    border-top: #d5d5d5 solid 1px;
 }

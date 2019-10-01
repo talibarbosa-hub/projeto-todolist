@@ -8,16 +8,20 @@ Criar as Divs
  
 #CSS
 plano de fundo gradient ok
-Form fundo branco centralizada
-Estilizar os botões roxo escuro com fonte branca
-Negrito para tarefas não realizadas
+Form fundo branco centralizada ok
+Estilizar os botões roxo escuro com fonte branca ok
+Negrito para tarefas não realizadas (JS)
+responsivo ok
+
 
 #JS
-capturar elementos
+capturar elementos ok 
     input digite a tarefa
     submit
     btnMarcarTodos
     btnLimparLista
+    form
+    tarefas
 Inserir um evento  ao submit
 criar uma div com o input
 Criar condição para btnMarcarTodos

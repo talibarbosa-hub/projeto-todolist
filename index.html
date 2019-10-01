@@ -13,18 +13,18 @@
     <div id="titulo">Add a new task</div>
     <div id="divForm">
         <form id="form">
-            <input type="text" id=input placeholder="Type a task here">
+            <input maxlength="80" type="text" id=input placeholder="Type a task here">
         <div class ="btnAdd" >
-            <submit id ="btnAdd">ADD</submit>
+            <button type="submit" id ="btnAdd">ADD</button>
         </div>
+        <ul id ="listaDeTarefas"></ul>
         </form>
         <div id="divBtns">
             <button class ="btns"id ="btnMarcarTodos">Mark all as done</button>
             <button class ="btns"id ="btnLimparLista">Clear list</button>
         </div>
-    </div>
-    
-    
+    </div>    
 </section>
+<script src="js/script.js"></script>
 </body>
 </html>
