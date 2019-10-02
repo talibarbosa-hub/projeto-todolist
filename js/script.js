@@ -17,18 +17,20 @@ form.addEventListener('submit', function (e) {
 
     } else {
         let tarefaInputada = document.createElement('li')
+        let tarefaContent = document.createElement('span')
         let x = document.createElement('button')
         x.setAttribute('type', "button")
         x.innerHTML = 'x';
         x.classList.add("xStyle")
         x.addEventListener('click', function () {
-            if (tarefaInputada.classList.contains('checked')) {
-                tarefaInputada.classList.remove('checked')
+            if (tarefaContent.classList.contains('checked')) {
+                tarefaContent.classList.remove('checked')
             } else {
-                tarefaInputada.classList.add('checked')
+                tarefaContent.classList.add('checked')
             }
         })
-        tarefaInputada.textContent = tarefa;
+        tarefaContent.textContent = tarefa;
+        tarefaInputada.appendChild(tarefaContent)
         tarefaInputada.appendChild(x)
         listaDeTarefas.appendChild(tarefaInputada);
         tarefaInputada.classList.add('tarefa');
@@ -37,10 +39,51 @@ form.addEventListener('submit', function (e) {
 
         const btnMarcarTodos = document.getElementById('btnMarcarTodos')
         btnMarcarTodos.addEventListener('click', function(){
-        tarefaInputada.classList.add('checked') 
+        tarefaContent.classList.add('checked') 
 
     })
         
+        // DRAG AN DROP
+
+        tarefaInputada.setAttribute('draggable','true')
+        listaDeTarefas.setAttribute('draggable','true')
+        tarefaContent.setAttribute('draggable','true')
+        x.setAttribute('draggable','true')
+        // tarefaInputada.setAttribute('ondragover', 'allowDrop(event)')
+        // ul id listadetarefas
+        //li class tarefa
+
+        //DRAGSTART
+        let element
+        listaDeTarefas.addEventListener('dragstart',function(e){
+            console.log('drag start')
+        element = e.target.closest('.tarefa')
+        })
+
+        //DRAGOVER
+        listaDeTarefas.addEventListener('dragover', function(e){
+            e.preventDefault()
+            console.log('drag over')
+            let position = e.target.closest('.tarefa')
+            this.insertBefore(element, position)
+        })
+        //DRAGEND
+        listaDeTarefas.addEventListener('dragend',function(e){
+            element =null
+        
+        })
+
+
+
+
+
+      
+
+
+
+
+        
+
     }
 // Button Mark all as done   
     
@@ -65,4 +108,5 @@ document.getElementById('listaDeTarefas').innerHTML = ""
 
 //     })
 
-// DRAG AN DROP
+
+   
