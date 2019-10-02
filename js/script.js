@@ -32,12 +32,18 @@ form.addEventListener('submit', function (e) {
         tarefaInputada.appendChild(x)
         listaDeTarefas.appendChild(tarefaInputada);
         tarefaInputada.classList.add('tarefa');
+        console.log(tarefaInputada)
+        form.reset()
+
+        const btnMarcarTodos = document.getElementById('btnMarcarTodos')
+        btnMarcarTodos.addEventListener('click', function(){
+        tarefaInputada.classList.add('checked') 
+
+    })
+        
     }
 // Button Mark all as done   
-    const btnMarcarTodos = document.getElementById('btnMarcarTodos')
-    btnMarcarTodos.addEventListener('click', function(){
-        listaDeTarefas.classList.add('checked') 
-    })
+    
 
 })
 
@@ -58,3 +64,5 @@ document.getElementById('listaDeTarefas').innerHTML = ""
 //     tarefasRealizadas.forEach(function() {
 
 //     })
+
+// DRAG AN DROP
