@@ -13,7 +13,15 @@
     <div id="titulo">ADD A NEW TASK</div>
     <div id="divForm">
         <form id="form">
-            <input maxlength="80" type="text" id=input placeholder="Type a task here">
+            <div id="inputPriority">
+                <p> Please, select the piority of this task 
+                    <select id='select'>
+                        <option class="high" value="high">High</option>
+                        <option class="medium"value="medium">Medium</option>
+                        <option class="low" value="low">Low</option>
+                    </select></p>                
+                <input maxlength="80" type="text" id=input placeholder="Type a task here">  
+            </div>
         <div class ="btnAdd" >
             <button type="submit" id ="btnAdd">ADD</button>
         </div>
@@ -22,6 +30,7 @@
         <div id="divBtns">
             <button class ="btns"id ="btnMarcarTodos">Mark all as done</button>
             <button class ="btns"id ="btnLimparLista">Clear list</button>
+            <button class ="btns"id ="btnLimparFeitos">Clear Done</button>
         </div>
     </div>    
 </section>

@@ -84,7 +84,7 @@ ul > li{
     opacity: 0.5;
 }
 
-.xStyle { 
+.checkStyle { 
     background-color: white;
     border-style: none;
 
@@ -94,4 +94,18 @@ ul > li{
 
 .tarefa {
     border-top: #d5d5d5 solid 1px;
+}
+
+/* === INPUT BOX=== */
+
+#inputPriority > p { 
+    margin-left: 20px;
+    display:flex;
+    justify-content: space-around;
+
+}
+
+
+.high{
+    color: red;
 }
