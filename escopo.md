@@ -27,3 +27,9 @@ criar uma div com o input
 Criar condição para btnMarcarTodos
 Criar condição para btnLimparLista
 
+// excluir botão
+        // remove.innerHTML ='x' 
+        // remove.addEventListener('click',function(){
+        //     tarefaInputada.remove()
+
+        // })

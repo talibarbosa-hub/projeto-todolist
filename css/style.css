@@ -11,7 +11,6 @@ body{
 
 section{
     background-color: white;
-    margin: 0 auto;
     min-height: 90vh;
     min-width: 75vw;
     margin: 20px;
@@ -50,20 +49,22 @@ section{
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top: 50px;
+    margin-top: 30%;
+    padding: 5px;
     background-color: #faf7fd; 
-    height: 65px;   
+    height: 70px;   
 }
 
 .btns {
     background-color:hsl(270, 100%, 80%);
     color: white;
-    margin-right: 20px;
+    margin: 0 auto;
     border-radius: 5px;
     border-style:none;
-    padding: 8px 5px;
-    height: 40px;
-    margin-top: 13px;
+    padding: 5px;
+    height: 47px;
+    width: 30%;
+    margin-top: 8px;
 }
 
 ul {
@@ -74,38 +75,67 @@ ul > li{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-
+    
 }
 
-
+.content{
+    max-width: 50px;
+}
 .checked{
     text-decoration: line-through;
     opacity: 0.5;
 }
 
-.checkStyle { 
-    background-color: white;
-    border-style: none;
-
+.btnOptions{ 
+    background-color: transparent;
+    border-style: none; 
+    transition: 0.5s all;
+    padding: 0;
+    margin-right: 10px;
 }
 
+.checkStyle:hover{
+    color: green;
+    transform:scale(2);
+    transition-duration: 0.4s;
+}
+
+
+
+.removeStyle:hover{
+    color:red;
+    transform:scale(2);
+    /* transition-duration: 0.4s; */
+}
 /* === TAREFAS BOX=== */
 
 .tarefa {
     border-top: #d5d5d5 solid 1px;
+    padding: 0;
 }
 
 /* === INPUT BOX=== */
 
 #inputPriority > p { 
-    margin-left: 20px;
+    margin: 10px 10px;
     display:flex;
     justify-content: space-around;
+    font-size: 15px;
 
 }
-
 
 .high{
-    color: red;
+color: red;
+width: 65px;
 }
+
+.medium{
+color: rgb(221, 221, 2);
+width: 65px;
+}
+
+.low{
+    color:green;
+    width:65px;
+}
+
