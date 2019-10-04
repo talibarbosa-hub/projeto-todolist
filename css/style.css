@@ -11,7 +11,7 @@ body{
 
 section{
     background-color: white;
-    min-height: 90vh;
+    max-height: 90vh;
     min-width: 75vw;
     margin: 20px;
 }
@@ -49,7 +49,7 @@ section{
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top: 30%;
+    margin-top: 10%;
     padding: 5px;
     background-color: #faf7fd; 
     height: 70px;   
@@ -63,8 +63,9 @@ section{
     border-style:none;
     padding: 5px;
     height: 47px;
-    width: 30%;
+    width: 20%;
     margin-top: 8px;
+    
 }
 
 ul {
@@ -79,7 +80,7 @@ ul > li{
 }
 
 .content{
-    max-width: 50px;
+    max-width: 100px;
 }
 .checked{
     text-decoration: line-through;
@@ -100,11 +101,10 @@ ul > li{
     transition-duration: 0.4s;
 }
 
-
-
 .removeStyle:hover{
     color:red;
     transform:scale(2);
+
     /* transition-duration: 0.4s; */
 }
 /* === TAREFAS BOX=== */
@@ -119,8 +119,9 @@ ul > li{
 #inputPriority > p { 
     margin: 10px 10px;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 15px;
+    color:hsl(270, 96%, 71%);
 
 }
 

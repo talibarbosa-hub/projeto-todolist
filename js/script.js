@@ -12,7 +12,7 @@ form.addEventListener('submit', function (e) {
    
     let tarefa = input.value;
     if (tarefa.trim() === "") {
-        alert("Por favor insira uma tarefa")
+        // alert("Por favor insira uma tarefa")
 
     } else {
         let tarefaInputada = document.createElement('li')
@@ -44,13 +44,13 @@ form.addEventListener('submit', function (e) {
             } else {
                 tarefaContent.classList.add('checked')
             }
-            form.reset()
+            
         })
-
+        form.reset()
 
 //EDITAR TAREFA 
         tarefaContent.setAttribute('contentEditable','true')
-        tarefaContent.classList.add('content')
+        // tarefaContent.classList.add('content')
 
         
         optionContent.textContent = opcoes
@@ -80,7 +80,6 @@ form.addEventListener('submit', function (e) {
         }
 
        
-
         // Buttton Clear done
 
         const btnLimparFeitos = document.getElementById('btnLimparFeitos')
@@ -135,7 +134,7 @@ btnLimparLista.addEventListener('click', function () {
 const btnMarcarTodos = document.getElementById('btnMarcarTodos')
 btnMarcarTodos.addEventListener('click', function () {
     listaDeTarefas.childNodes.forEach((tarefa) => {
-        tarefa.childNodes[0].classList.add('checked')
+        tarefa.childNodes[1].classList.add('checked')
     })
 
 })
